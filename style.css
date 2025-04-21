@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e4f1f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 15px;
+}
+
+h1 {
+    background-color: #154041;
+    padding: 20px;
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 800px;
+}
+
+#inputText {
+    flex: 1;
+    min-width: 240px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+#inputText:focus,
+#inputText:hover {
+    background-color: #fef6e4;
+    border-color: #e5a623;
+    outline: none;
+}
+
+#searchBtn {
+    padding: 12px 20px;
+    background-color: #154041;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#searchBtn:hover {
+    background-color: #0d2d2d;
+}
+
+.meaning-container {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.meaning-container h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #154041;
+}
+
+.meaning-container p,
+.meaning-container li,
+.meaning-container span {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.meaning-container li {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.meaning-container a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #154041;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.meaning-container a:hover {
+    color: #e67e22;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #searchBtn {
+        width: 100%;
+    }
+}
